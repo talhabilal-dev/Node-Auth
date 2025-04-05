@@ -1,14 +1,15 @@
 import jwt from "jsonwebtoken";
+import ENV from "../config/env.config.js";
 
 const generateAccessToken = (userId, options) => {
   const payload = { id: userId };
-  const secret = process.env.ACCESS_TOKEN_SECRET;
+  const secret = ENV.ACCESS_TOKEN_SECRET;
   return jwt.sign(payload, secret, options);
 };
 
 const generateRefreshToken = (userId, options) => {
   const payload = { id: userId };
-  const secret = process.env.REFRESH_TOKEN_SECRET;
+  const secret = ENV.REFRESH_TOKEN_SECRET;
   return jwt.sign(payload, secret, options);
 };
 
@@ -20,4 +21,4 @@ const verifyToken = (token, secret) => {
   }
 };
 
-export { generateAccessToken, generateRefreshToken , verifyToken };
+export { generateAccessToken, generateRefreshToken, verifyToken };

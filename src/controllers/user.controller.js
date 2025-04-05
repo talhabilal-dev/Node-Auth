@@ -60,7 +60,6 @@ export const loginUser = async (req, res) => {
     }
 
     const isMatch = await verifyPassword(user.password, password);
-    console.log(isMatch);
     if (!isMatch) {
       return errorResponse(
         res,
