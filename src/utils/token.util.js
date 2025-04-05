@@ -15,7 +15,7 @@ const generateRefreshToken = (userId, options) => {
 
 const verifyToken = (token, secret) => {
   try {
-    return jwt.verify(token, secret);
+    return jwt.verify(token, secret );
   } catch (err) {
     throw new Error("Token verification failed");
   }

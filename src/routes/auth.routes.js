@@ -12,9 +12,9 @@ const router = Router();
 
 router.post("/register", registerUser);
 router.post("/login", loginUser);
-router.post("/refresh-token", authMiddleware, refreshToken);
+router.post("/refresh-token", refreshToken);
 
-router.post("/logout", authMiddleware, logoutUser);
+router.post("/logout", logoutUser);
 router.get("/protected-resource", authMiddleware, getResponse);
 
 export default router;

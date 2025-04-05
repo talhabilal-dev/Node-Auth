@@ -7,5 +7,6 @@ export default defineConfig({
     testTimeout: 20000, // Set a timeout for tests (10 seconds)
     globals: true, // Ensure Vitest globals are enabled
     environment: "node", // Make sure you're using a Node.js environment for tests
+    
   },
 });

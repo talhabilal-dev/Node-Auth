@@ -1,5 +1,6 @@
-import jwt from "jsonwebtoken";
 import { errorResponse } from "../utils/ApiResponse.util.js";
+import { verifyToken } from "../utils/token.util.js";
+import ENV from "../config/env.config.js";
 
 const authMiddleware = (req, res, next) => {
   const token = req.header("Authorization")?.replace("Bearer ", "");
@@ -14,8 +15,15 @@ const authMiddleware = (req, res, next) => {
   }
 
   try {
-    
-    const decoded = jwt.verify(token, process.env.ACCESS_TOKEN_SECRET);
+    const decoded = verifyToken(token, ENV.ACCESS_TOKEN_SECRET);
+    if (!decoded) {
+      return errorResponse(
+        res,
+        new Error("Invalid token"),
+        "Unauthorized",
+        401
+      );
+    }
 
     req.user = decoded;
 
