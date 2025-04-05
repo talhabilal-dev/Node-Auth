@@ -203,6 +203,6 @@ Special thanks to all contributors and open-source libraries that power this pro
 Found a bug? Got a feature request? Just want to say hi? We'd love to hear from you!
 
 - 🐛 **[Open an Issue](https://github.com/talhabilal-dev/Node-Auth/issues)** – Report bugs or suggest new features.
-- 💼 **[Connect on LinkedIn](www.linkedin.com/in/muhammad-talha-bilal-965992322)** – Let's network and collaborate.
+- 💼 **[Connect on LinkedIn](https://www.linkedin.com/in/muhammad-talha-bilal-965992322)** – Let's network and collaborate.
 
 Or, if all else fails, screaming into the void works too! 😅
