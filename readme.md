@@ -105,33 +105,37 @@ The server should now be running at: [http://localhost:3000]
 ```markdown
 ## 📂 Project Structure
 
-Here's an overview of the project's structure:
+Here's an overview of the project's structure: 
 
-├── **src**/ # Source code
-│ ├── **config**/ # Database and app configuration
-│ ├── **controllers**/ # Request handlers (auth logic, etc.)
-│ ├── **middlewares**/ # Custom Express middlewares
-│ ├── **models**/ # Mongoose models and schemas
-│ ├── **routes**/ # Express route definitions
-│ ├── **tests**/ # Vitest + Supertest test cases
-│ └── **utils**/ # Helper functions (e.g., token utils, password hashing)
-│ ├── **app.js** # Express app setup
-│ └── **index.js** # Entry point
-├── **.env** # Environment variables
-├── **.env.example** # Example env config
-├── **vitest.config.js** # Vitest testing config
-├── **nodemon.json** # Nodemon dev config
-├── **package.json** # Project metadata and scripts
-├── **LICENSE** # MIT License
-├── **.gitignore** # Git ignore rules
-├── **.prettierrc** # Prettier config
-├── **eslint.config.js** # ESLint config
-└── **README.md** # Project documentation
+
+├── src/                     # Source code
+│   ├── config/              # Database and app configuration
+│   ├── controllers/         # Request handlers (auth logic, etc.)
+│   ├── middlewares/         # Custom Express middlewares
+│   ├── models/              # Mongoose models and schemas
+│   ├── routes/              # Express route definitions
+│   ├── tests/               # Vitest + Supertest test cases
+│   └── utils/               # Helper functions (e.g., token utils, password hashing)
+│   ├── app.js               # Express app setup
+│   └── index.js             # Entry point
+├── .env                     # Environment variables
+├── .env.example             # Example env config
+├── vitest.config.js         # Vitest testing config
+├── nodemon.json             # Nodemon dev config
+├── package.json             # Project metadata and scripts
+├── LICENSE                  # MIT License
+├── .gitignore               # Git ignore rules
+├── .prettierrc              # Prettier config
+├── eslint.config.js         # ESLint config
+└── README.md                # Project documentation
+
 ```
 
 This structure ensures a clean and modular codebase, making it easy to navigate and extend.
 
 > 🔍 **Modular**, **scalable** **architecture** built for real-world Node.js applications.
+
+This structure ensures a clean and modular codebase, making it easy to navigate and extend.
 
 ## 📡 API Endpoints
 
@@ -199,6 +203,6 @@ Special thanks to all contributors and open-source libraries that power this pro
 Found a bug? Got a feature request? Just want to say hi? We'd love to hear from you!
 
 - 🐛 **[Open an Issue](https://github.com/talhabilal-dev/Node-Auth/issues)** – Report bugs or suggest new features.
-- 💼 **[Connect on LinkedIn](www.linkedin.com/in/muhammad-talha-bilal-965992322)** – Let's network and collaborate.
+- 💼 **[Connect on LinkedIn](https://www.linkedin.com/in/muhammad-talha-bilal-965992322)** – Let's network and collaborate.
 
 Or, if all else fails, screaming into the void works too! 😅
