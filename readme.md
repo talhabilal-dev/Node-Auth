@@ -134,11 +134,8 @@ Here's an overview of the project's structure:
 This structure ensures a clean and modular codebase, making it easy to navigate and extend.
 
 > 🔍 **Modular**, **scalable** **architecture** built for real-world Node.js applications.
-```
 
 This structure ensures a clean and modular codebase, making it easy to navigate and extend.
-
-> 🔍 **Modular**, **scalable** **architecture** built for real-world Node.js applications.
 
 ## 📡 API Endpoints
 
