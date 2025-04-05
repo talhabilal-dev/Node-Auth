@@ -18,7 +18,7 @@ An open-source authentication system for Node.js, designed for flexibility, secu
 ### Clone the repository
 
 ```sh
-git clone https://github.com/your-username/your-auth-project.git
+git clone https://github.com/talhabilal-dev/Node-Auth.git
 cd your-auth-project
 ```
 
