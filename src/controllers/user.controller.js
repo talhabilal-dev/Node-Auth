@@ -75,6 +75,13 @@ export const loginUser = async (req, res) => {
 
     // Optional: Save refresh token in DB or Redis for invalidation
 
+    // const updatedUser = await User.updateOne({ _id: user._id }, { refreshToken });
+    // if (updatedUser.modifiedCount === 0) {
+    //   return errorResponse(res, new Error("Failed to save refresh token"), "Internal server error", 500);
+    // }
+    // Uncomment the above lines and add refreshToken field to User model
+    // if you want to store refresh token in DB
+
     // Set refresh token as http-only cookie
     res.cookie("refreshToken", refreshToken, {
       httpOnly: true,
@@ -83,7 +90,11 @@ export const loginUser = async (req, res) => {
       maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
     });
 
-    return successResponse(res, { accessToken ,refreshToken }, "Login successful");
+    return successResponse(
+      res,
+      { accessToken, refreshToken },
+      "Login successful"
+    );
   } catch (err) {
     return errorResponse(res, err, "Login failed");
   }

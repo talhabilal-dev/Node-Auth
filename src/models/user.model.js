@@ -18,10 +18,6 @@ const userSchema = new mongoose.Schema({
     required: true,
     minlength: 6,
   },
-  accessToken: {
-    type: String,
-    default: null,
-  },
   refreshToken: {
     type: String,
     default: null,
