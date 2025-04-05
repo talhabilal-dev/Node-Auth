@@ -10,6 +10,21 @@
     "type": "git",
     "url": "git+https://github.com/talhabilal-dev/Node-Auth.git"
   },
+  "keywords": [
+    "authentication",
+    "node",
+    "express",
+    "jwt",
+    "argon2",
+    "mongoose",
+    "cookie-parser",
+    "dotenv",
+    "nodemon",
+    "eslint",
+    "prettier",
+    "vitest",
+    "supertest"
+  ],
   "license": "MIT",
   "author": "Talha Bilal",
   "type": "module",
