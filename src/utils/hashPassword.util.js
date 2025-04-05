@@ -11,10 +11,11 @@ async function hashPassword(password) {
 
 async function verifyPassword(hashedPassword, plainPassword) {
   try {
+    console.log(hashedPassword, plainPassword);
     const isMatch = await argon2.verify(hashedPassword, plainPassword);
     return isMatch;
   } catch (err) {
-    throw new Error("Error verifying password");
+    throw new Error("Error verifying password" + err);
   }
 }
 
