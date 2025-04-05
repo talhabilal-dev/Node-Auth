@@ -1,0 +1,41 @@
+{
+  "name": "node-auth",
+  "version": "1.0.0",
+  "description": "An open-source authentication system for Node.js, built for flexibility, security, and ease of use. Supports multiple databases and frameworks with pre-built authentication flows.",
+  "homepage": "https://github.com/talhabilal-dev/Node-Auth#readme",
+  "bugs": {
+    "url": "https://github.com/talhabilal-dev/Node-Auth/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/talhabilal-dev/Node-Auth.git"
+  },
+  "license": "MIT",
+  "author": "Talha Bilal",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "lint": "eslint . --fix",
+    "format": "prettier --write .",
+    "start": "node src/index.js",
+    "dev": "nodemon"
+  },
+  "dependencies": {
+    "argon2": "^0.41.1",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.13.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.23.0",
+    "eslint": "^9.23.0",
+    "globals": "^16.0.0",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.5.3",
+    "supertest": "^7.1.0",
+    "vitest": "^3.1.1"
+  }
+}
