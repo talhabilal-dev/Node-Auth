@@ -2,6 +2,7 @@ import request from "supertest";
 import { describe, it, expect, beforeAll } from "vitest";
 import app from "../app.js";
 import connectDB from "../config/db.config.js";
+import mongoose from "mongoose";
 
 let server;
 let accessToken;
